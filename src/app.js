@@ -17,4 +17,13 @@ app.use(express.static("public"))  // Makes the public folder accessible to the 
 app.use(cookieParser())  // Allows Express to read cookies sent by the browser.
 
 
-export {app}
+
+// routes import
+
+import userRouter from "./routes/user.routes.js"
+
+
+// routes declaration
+app.use("/api/v1/users",userRouter)
+
+export default app
