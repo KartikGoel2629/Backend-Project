@@ -15,6 +15,9 @@ connectDB().then(()=>{
 
 
 /*
+import {DB_NAME} from './constants.js';
+import mongoose from 'mongoose';
+
 import express from 'express';
 const app=express();
 
